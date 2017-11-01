@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header title="uiine.tokyo"></Header>
+        <Header title="Writer : uiine.tokyo"></Header>
         <Route exact path="/" component={About} />
         <Route exact path={path.list} component={About} />
         <Route exact path={path.detail} component={Article} />

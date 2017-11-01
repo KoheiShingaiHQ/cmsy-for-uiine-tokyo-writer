@@ -23,7 +23,7 @@ class Nav extends Component {
   componentDidMount() {
     var menu = [];
     var data = [
-      {name: path.detail.split('/').join(''), path: path.detail, class: 'detail'},
+      //{name: path.detail.split('/').join(''), path: path.detail, class: 'detail'},
       {name: "recently", path: path.list, class: 'list'}
     ];
     for(var i in data){
