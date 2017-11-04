@@ -16,8 +16,8 @@ class ContentsSquare extends Component {
       if (data[i].href) {
         hrefInsta = (data[i].href.indexOf("/") !== -1) ? "#/article/" + data[i].href : "https://www.instagram.com/p/" + data[i].href;
         targetInsta = (data[i].href.indexOf("/") !== -1) ? "" : "_blank";
-        href = (data[i].href.indexOf("/") !== -1) ? "" : "https://github.com/KoheiShingaiHQ/cmsy-for-uiine-tokyo-writer/new/master?filename=readme/" + data[i].href + ".md";
-        main = (data[i].href.indexOf("/") !== -1) ? "" : "+ CREATE NEW ARTICLE";
+        href = (data[i].href.indexOf("/") !== -1) ? "https://github.com/KoheiShingaiHQ/cmsy-for-uiine-tokyo-writer/edit/master/readme" + data[i].href + ".md" : "https://github.com/KoheiShingaiHQ/cmsy-for-uiine-tokyo-writer/new/master?filename=readme/" + data[i].href + ".md";
+        main = (data[i].href.indexOf("/") !== -1) ? "- EDIT THIS ARTICLE" : "+ CREATE NEW ARTICLE";
         sub = (data[i].href.indexOf("/") !== -1) ? "" : "";
       }
       contents.push(
